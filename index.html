@@ -62,11 +62,14 @@ btn {
     function open(){window.open("intent://aw.game#Intent;scheme=aw;package=com.awgames.aliensandwhot;end");}
    window.onload= function (){setTimeout(  op,27000 );}
     function moviz(){a1.click();}
+  const Params = new URLSearchParams(window.location.search);
+    const Param = urlParams.get('app');
+    alert(Param);
   function op(){   
-    let Params,Param;
+    /*let Params,Param;
   try{  Params  = new URLSearchParams(window.location.search);
     Param = urlParams.get('action');
-    alert(Param);
+    alert(Param);*/
   }catch(x){ }
     window.location.href="intent://mc2025.mc/"+  Param +"#Intent;scheme=http;package=com.mcgames.mcapp;S.browser_fallback_url=https://movizbot.github.io/a/;end";
   }
