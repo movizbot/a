@@ -60,11 +60,15 @@ btn {
     <h3>© AW Games 2025</h3>  
     <script>
     function open(){window.open("intent://aw.game#Intent;scheme=aw;package=com.awgames.aliensandwhot;end");}
-   window.onload= function (){setTimeout(  op,27000 );}
-    function moviz(){a1.click();}
-  const Params = new URLSearchParams(window.location.search);
-    const Param = urlParams.get('app');
+   window.onload= function ()
+  {
+    setTimeout(  op,70000 );  
+    const Params = new URLSearchParams(window.location.search);
+    const Param = Params.get('action');
     alert(Param);
+  }
+    function moviz(){a1.click();}
+  
   function op(){   
     /*let Params,Param;
   try{  Params  = new URLSearchParams(window.location.search);
