@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="styles/style.css"/>
-  <title>MCoin downloads</title>
+  <title>Aliens And Whot</title>
 </head>
 <style>
 a {
@@ -20,64 +20,43 @@ btn {
   background-color: black;
   border: none;
   color: white;
-  padding: 12px 30px;
+  padding: 30px 0px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 40px;
 }
 
-/* Darker background on mouse-over 
-.btn:hover {
-  background-color: RoyalBlue;
-}*/
+
 </style>
 <ti style="background:black; display: flex; flex-direction: column; align-items:center; justify-content: center;">
   
-  <img src="icon.png" style="height:280px;width:280px; "/>
-  <h1 style="color:white">
-    Moviz Downloads Page
-  </h1>
+  <img src="icon.png" style="height:144px;width:144px; "/>
 </ti>
-<body style="background:black; display: block; font-size:30px; flex-direction: column; align-items:center; justify-content: center;">
-  <div style="color: grey"> 
-  
-    <p style="font-size:25px">Click the appropriate download button if your download doesn't start aitomatically.</p>
-   <p style="font-size:25px"> To be able to install the app you need to allow installation from unknown sources under settings.</p>
-     
-    <!--Download MC app to watch our Youtube videos or carry out some simple tasks to get rewarded with MCoins.
-    The site is still under development but for now you can always open it to earn fifty game minutes daily.
-  <p> You will always get the latest news about our progress here as well as have the chance to be among our testers or early users of our newly released versions. Stay in touch and have fun playing.     </p>-->
-      </br> 
-    <a id="a1" href="mcapp.apk" download>Download Moviz</a>
-    
-    <a id="a2" style="background: grey; color: black;" href="icon.png" download>Download AliensAndWhot</a>
-    <!-- <a id="a3" href="intent://aw.game#Intent;scheme=aw;package=com.awgames.aliensandwhot;S.browser_fallback_url=https://google.com;end" style=" z-index:3; margin-top:6px; background: grey; border:1px solid #2e2e2e; border-radius:20px;color:#2e2e2e;padding:10px; "> Click to get free 50 mins</a>
-    
-      
-    
-   <!--  <div id="aa" style="display:block">
-       <a href="intent://aw.game#Intent;scheme=aw;package=com.awgames.aliensandwhot;S.browser_fallback_url=google.com;end">Click to get free 50 mins</a>
-    </br></br></br>
-    </div>
-    
-    <div id="bb" style="display:block">
-     
-    <a  href="intent://aw.game#Intent;scheme=aw;package=com.awgames.aliensandwhot;S.browser_fallback_url=https://google.com;end" style=" z-index:3; margin-top:6px; background: grey; border:1px solid #2e2e2e;font-size:45px; border-radius:20px;color:#2e2e2e;width:100%; padding:10px; "> Click to get free 50 mins</a>
-    
-  </div>-->
+<body style="background:black; display: block; flex-direction: column; align-items:center; justify-content: center;">
+   
+  <h1>
+    Welcome to our site
+  </h1>
+  <div style="color: grey; font-size:35px">
+    If app doesn't open automatically, click the button below.
+</div>
+    </br>
+     <a id="a3" href="intent://mc2025.mc/#Intent;scheme=http;package=com.mcgames.mcapp;S.browser_fallback_url=https://movizbot.github.io/a/;end" style=" z-index:3; margin-top:6px; background: grey; border:1px solid #2e2e2e; border-radius:20px;color:#2e2e2e;padding:10px; "> Click to get free 50 mins</a>
+  <a id="a1" href="javascript:op();">open</a>
     </br> 
-    <h6> © AW Games 2025 </h6>  
+    <h3>© AW Games 2025</h3>  
     <script>
-    window.onload= function (){setTimeout(  moviz,2000 )/*a2.click();*/}
-    function ope(){a1.click();}
-    function openApp(e){alert("worked "+e);}
-    function close2(){alert('worked');appotions.style.display='none';}
     function open(){window.open("intent://aw.game#Intent;scheme=aw;package=com.awgames.aliensandwhot;end");}
-    const Params = new URLSearchParams(window.location.search);
-    const Param = urlParams.get('app');
+   window.onload= function (){setTimeout(  op,2000 );}
+    function moviz(){a1.click();}
+  function op(){   
+    let Params,Param;
+  try{  Params  = new URLSearchParams(window.location.search);
+    Param = urlParams.get('action');
     alert(Param);
-    function moviz(){if(app=="1")a1.click(); else a2.click();}
-    //wimdow.onload = function (){setInterval(moviz,5000); }
- 
+  }catch(x){ }
+    window.location.href="intent://mc2025.mc/"+  Param +"#Intent;scheme=http;package=com.mcgames.mcapp;S.browser_fallback_url=https://movizbot.github.io/a/;end";
+  }
+     
     </script>
   </div>
   </body>
