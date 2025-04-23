@@ -62,13 +62,13 @@ btn {
    window.onload= function ()
       {
         
-    setTimeout(  op,5000 );  
+    setTimeout(  op,7000 );  
     setInterval(  timeer1,1000 );
   }
   const Params = new URLSearchParams(window.location.search);
     const Param = Params.get('action');
       var tim=0;
-    function timeer1(){if(tim >0)tim =tim - 1;else clearInterval(timeer1); document.getElementById("co").innerHTML = "If app doesn't open automatically after the countdown" +tim+ "click the button below." ;}
+    function timeer1(){if(tim >0)tim =tim - 1;else clearInterval(timeer1); document.getElementById("co").innerHTML = "If app doesn't open automatically after the countdown " +tim+ ",  click the button below." ;}
     function moviz(){a1.click();}
   
   function op(){   
