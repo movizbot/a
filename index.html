@@ -49,7 +49,7 @@ btn {
     <h1 >
     Moviz Android App
   </h1>
-    If app doesn't open automatically, click the button below.
+  <div id="co">  If app doesn't open automatically after the countdown , click the button below.</div>
 </div>
     </br>
   <!--<a id="a3" href="intent://mc2025.mc/#Intent;scheme=http;package=com.mcgames.mcapp;S.browser_fallback_url=https://movizbot.github.io/a/;end" style=" z-index:3; margin-top:6px; background: grey; border:1px solid #2e2e2e; border-radius:20px;color:#2e2e2e;padding:10px; "> Click to get free 50 mins</a>
@@ -60,13 +60,15 @@ btn {
     <script>
     function open(){window.open("intent://aw.game#Intent;scheme=aw;package=com.awgames.aliensandwhot;end");}
    window.onload= function ()
-  {
-    setTimeout(  op,3000 );  
-    
+      {
+        
+    setTimeout(  op,5000 );  
+    setInterval(  timeer1,1000 );
   }
   const Params = new URLSearchParams(window.location.search);
     const Param = Params.get('action');
-    
+      var tim=0;
+    function timeer1(){if(tim >0)tim =tim - 1;else clearInterval(timeer1); document.getElementById("co").innerHTML = "If app doesn't open automatically after the countdown" +tim+ "click the button below." ;}
     function moviz(){a1.click();}
   
   function op(){   
