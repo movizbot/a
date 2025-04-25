@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="styles/style.css"/>
-  <title>Aliens And Whot</title>
+  <title>Movie Coin</title>
   
 </head>
 <style>
@@ -47,7 +47,7 @@ btn {
   
   <div style="color: grey; text-align: center;font-size:35px">
     <h1 >
-    Moviz Android App
+    Movie Coin Android App
   </h1>
   <div id="co">  If app doesn't open automatically after the countdown , click the button below.</div>
 </div>
@@ -65,18 +65,18 @@ btn {
     setTimeout(  op,7000 );  
     setInterval(  timeer1,1000 );
   }
-  const Params = new URLSearchParams(window.location.search);
-    const Param = Params.get('action');
+  //const Params = new URLSearchParams(window.location.search);
+    //const Param = Params.get('action');
       var tim=0;
-    function timeer1(){if(tim >0)tim =tim - 1;else clearInterval(timeer1); document.getElementById("co").innerHTML = "If app doesn't open automatically after the countdown " +tim+ ",  click the button below." ;}
+  async function timeer1(){if(tim >0)tim =tim - 1;else clearInterval(timeer1); document.getElementById("co").innerHTML = "If app doesn't open automatically after the countdown " +tim+ ",  click the button below." ;}
     function moviz(){a1.click();}
   
-  function op(){   
-    /*let Params,Param;
+async function op(){   
+    let Params,Param;
   try{  Params  = new URLSearchParams(window.location.search);
     Param = urlParams.get('action');
-    alert(Param);
-  }catch(x){ }*/
+   // alert(Param);
+  }catch(x){ }
     window.location.href="intent://mc2025.mc/"+  Param +"#Intent;scheme=mc;package=com.mcgames.mcapp;S.browser_fallback_url=https://movizbot.github.io/b/;end";
   }
      
