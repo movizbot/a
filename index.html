@@ -75,7 +75,7 @@ async function op(){
     let Params,Param;
   try{  Params  = new URLSearchParams(window.location.search);
    Param = Params.get('action');
-   alert(Param);
+   //alert(Param);
       let x="intent://mc2025.mc/"+  Param +"#Intent;scheme=mc;package=com.mcgames.mcapp;S.browser_fallback_url=https://movizbot.github.io/b/;end";
   setTimeout(1000,function () {window.location.href=x;}) ;
 
