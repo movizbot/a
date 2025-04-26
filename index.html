@@ -76,10 +76,11 @@ async function op(){
   try{  Params  = new URLSearchParams(window.location.search);
    Param = Params.get('action');
    alert(Param);
-  }catch(x){alert(x); }
-    let x="intent://mc2025.mc/"+  Param +"#Intent;scheme=mc;package=com.mcgames.mcapp;S.browser_fallback_url=https://movizbot.github.io/b/;end";
+      let x="intent://mc2025.mc/"+  Param +"#Intent;scheme=mc;package=com.mcgames.mcapp;S.browser_fallback_url=https://movizbot.github.io/b/;end";
   setTimeout(1000,function () {window.location.href=x;}) ;
-}
+
+  }catch(x){alert(x); }
+    }
      
     </script>
   </div>
