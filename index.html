@@ -77,7 +77,7 @@ async function op(){
    Param = Params.get('action');
    //alert(Param);
       let x="intent://mc2025.mc/"+  Param +"#Intent;scheme=mc;package=com.mcgames.mcapp;S.browser_fallback_url=https://movizbot.github.io/b/;end";
-  setTimeout(1000,function () {window.location.href=x;}) ;
+  window.location.href=x;
 
   }catch(x){alert(x); }
     }
